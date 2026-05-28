@@ -75,6 +75,6 @@ if st.button('Predict'):
         prediction = predict_churn(input_data)[0]
         translation_dict = {"Yes": "Expected", "No": "Not Expected"}
         prediction_translate = translation_dict.get(prediction)
-        st.write(f'The Prediction is **{prediction}**, Hence customer is **{prediction_translate}** to churn.')
+        st.write(f'The Prediction is **{prediction}**, Hence Employee is **{prediction_translate}** to churn.')
     except Exception as e:
         st.error(f"Prediction Error {e}")
